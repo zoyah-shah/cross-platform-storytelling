@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  background: #8c8177;
+}
+
+.navbar {
+    position: relative;
+    left: 15vw;
+    padding-top: 2vh;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #8c8177;
+  }
+  
+  li {
+    float: left;
+    font-family: "Maitree", serif;
+    font-size: 40px;
+    border-bottom: 1px solid #d7d7d1;
+    /* border-left: 1px solid #e0e8ef; */
+    /* border-right: 1px solid #e0e8ef; */
+  }
+  
+  li a {
+    display: block;
+    color: #d7d7d1;
+    text-align: center;
+    /* padding: 14px 16px; */
+    padding: 1rem 2rem;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #8c8177;
+  }
+  
+  .punctuation {
+    font-size: 18px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border-right: 1px solid #e0e8ef;
+    border-left: 1px solid #e0e8ef;
+  }
+  .colon{
+      /* font-size: 18px; */
+      padding-right: 2rem;
+      padding-left: 0rem;
+      border-right: 1px solid #e0e8ef;
+      /* border-left: 1px solid #e0e8ef; */
+    }
+    .semicolon{
+      /* font-size: 18px; */
+      padding-right: 2rem;
+      padding-left: 0rem;
+      border-right: 1px solid #e0e8ef;
+      /* border-left: 1px solid #e0e8ef; */
+    }
+  .quotation {
+    padding-right: 2rem;
+    padding-left: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    border-right: 1px solid #e0e8ef;
+  }
+  
+  .question {
+    padding: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    border-right: 1px solid #e0e8ef;
+    border-left: 1px solid #e0e8ef;
+  }
+  
+  .exclamation {
+    padding-right: 3rem;
+    padding-left: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    border-right: 1px solid #e0e8ef;
+  }
+  
+  .comma {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    /* border-right: 1px solid #e0e8ef; */
+  }
+  
+  .period {
+    padding-left: 0rem;
+    padding-right: 2.5rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    border-right: 1px solid #e0e8ef;
+  }
+  
+  .apostrophe {
+    padding-left: 0rem;
+    padding-right: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    border-right: 1px solid #e0e8ef;
+  }
+
+.box{
+    position: absolute;
+    top: 28vh;
+    left: 16vw;
+    font-family: "Maitree", serif;
+    font-size: 18px;
+    /* font-weight: 600; */
+    color: #e0e8ef;
+    width: 250px;
+    padding: 1rem;
+    border: 1px solid  #e0e8ef;
+    text-align: center;
+}
+
+.body-text{
+    position: relative;
+    color:  #e0e8ef;
+    text-align: center;
+    width: 35vw;
+    left: 45vw;
+    top: 10vh;
+    font-family: "Maitree", serif;
+    font-size: 16px;
+}
+
+.question-mark{
+    color: #3f312a;
+  }
+  
+  .question-mark:hover{
+    font-size: 0;
+  }
+  
+  .question-mark:hover:after{
+    content: attr(data-hover);
+  /*   content: "?"; */
+    font-size: 1.5rem;
+    color:#3f312a;
+  }
+
+
+
+  .exclamation-point{
+    color: #3f312a;
+  }
+  
+  .exclamation-point:hover{
+    font-size: 0;
+  }
+  
+  .exclamation-point:hover:after{
+    content: attr(data-hover);
+    font-size: 1.5rem;
+    color:#3f312a;
+  }
+
+  .quotation-mark{
+    color: #3f312a;
+  }
+  
+  .quotation-mark:hover{
+    font-size: 0;
+  }
+  
+  .quotation-mark:hover:after{
+    content: attr(data-hover);
+    font-size: 1.5rem;
+    color:#3f312a;
+  }
+
+  .next{
+      position: absolute;
+      left: 92vw;
+      top: 48vw;
+  }
+  .next-arrow{
+      /* position: absolute; */
+      width: 50%;
+      height: auto;
+  }
+
+  .back{
+    position: absolute;
+    left: 2vw;
+    top: 48vw;
+}
+.back-arrow{
+    /* position: absolute; */
+    width: 6%;
+    height: auto;
+}

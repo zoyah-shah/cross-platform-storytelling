@@ -1,12 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cross Platform Storytelling</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="drag-drop.js"></script>
+
     
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="question-mark.html"><span class="question">?</span></a>
+          </li>
+          <li>
+            <a href="exclamation-point.html"
+              ><span class="exclamation">!</span></a
+            >
+          </li>
+          <li>
+            <a href="semicolon.html"> <span class="semicolon">;</span></a>
+          </li>
+          <li>
+            <a href="comma.html"><span class="comma">,</span></a>
+          </li>
+          <li>
+            <a href="index.html"
+              ><span class="punctuation">On Punctuation</span></a
+            >
+          </li>
+          <li>
+            <a href="period.html"><span class="period">.</span></a>
+          </li>
+          <li>
+            <a href="apostrophe.html"> <span class="apostrophe">'</span></a>
+          </li>
+          <li>
+            <a href="quotation.html"> <span class="quotation">"</span></a>
+          </li>
+          <li>
+            <a href="colon.html"> <span class="colon">:</span></a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="drag-drop">
+        <h2 class="drag">
+          Drag and drop the punctuation to the category you think it belongs!
+        </h2>
+
+        <!-- drag and drop question mark -->
+        <!-- <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img
+            src="assets/question-mark.png"
+            draggable="true"
+            ondragstart="drag(event)"
+            id="drag1"
+            width="88"
+            height="31"
+          />
+        </div>
+
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+
+
+
+
+
+        <!-- drag and drop exclamation point -->
+        <!-- <div id="div3" ondrop="drop2(event)" ondragover="allowDrop2(event)">
+          <img
+            src="assets/exclamation-point.png"
+            draggable="true"
+            ondragstart="drag2(event)"
+            id="drag2"
+            width="88"
+            height="31"
+          />
+        </div>
+        <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+
+        <!-- drag and drop comma  -->
+        <!-- <div id="div5" ondrop="drop3(event)" ondragover="allowDrop3(event)">
+            <img
+              src="assets/exclamation-point.png"
+              draggable="true"
+              ondragstart="drag3(event)"
+              id="drag3"
+              width="88"
+              height="31"
+            />
+          </div>
+
+        <div
+          id="div6"
+          ondrop="drop3(event)"
+          ondragover="allowDrop3(event)"
+        ></div> -->
+      </div>
+
+
+      
+      <main class="grid">
+        
+        <div class="grid-box">
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img
+                  src="assets/question-mark.png"
+                  draggable="true"
+                  ondragstart="drag(event)"
+                  id="drag1"
+                  width="88"
+                  height="31"
+                />
+              </div>
+      
+              
+        </div>
+        
+        <div class="grid-box">
+            <div id="div3" ondrop="drop2(event)" ondragover="allowDrop2(event)">
+                <img
+                  src="assets/exclamation-point.png"
+                  draggable="true"
+                  ondragstart="drag2(event)"
+                  id="drag2"
+                  width="88"
+                  height="31"
+                />
+              </div>
+              
+        </div>
+
+        <div class="grid-box">
+            <div id="div5" ondrop="drop3(event)" ondragover="allowDrop3(event)">
+                <img
+                  src="assets/period.png"
+                  draggable="true"
+                  ondragstart="drag3(event)"
+                  id="drag3"
+                  width="88"
+                  height="31"
+                />
+              </div>
+    
+            
+        </div>
+        
+        
+        
+        <div class="grid-box">
+            <div id="div7" ondrop="drop4(event)" ondragover="allowDrop4(event)">
+                <img
+                  src="assets/quotation-mark.png"
+                  draggable="true"
+                  ondragstart="drag4(event)"
+                  id="drag4"
+                  width="88"
+                  height="31"
+                />
+              </div>
+    
+            
+        </div>
+        
+        <div class="grid-box">
+            <div id="div9" ondrop="drop5(event)" ondragover="allowDrop5(event)">
+                <img
+                  src="assets/apostrophe.png"
+                  draggable="true"
+                  ondragstart="drag5(event)"
+                  id="drag5"
+                  width="88"
+                  height="31"
+                />
+              </div>
+    
+            
+        </div>
+        
+        <div class="grid-box">
+            <div id="div11" ondrop="drop6(event)" ondragover="allowDrop6(event)">
+                <img
+                  src="assets/comma.png"
+                  draggable="true"
+                  ondragstart="drag6(event)"
+                  id="drag6"
+                  width="88"
+                  height="31"
+                />
+              </div>
+    
+            
+        </div>
+
+        <div class="grid-box">
+            <div id="div13" ondrop="drop7(event)" ondragover="allowDrop7(event)">
+                <img
+                  src="assets/colon.png"
+                  draggable="true"
+                  ondragstart="drag7(event)"
+                  id="drag7"
+                  width="88"
+                  height="31"
+                />
+              </div>
+    
+            
+        </div>
+
+        <div class="grid-box">
+            <div id="div15" ondrop="drop8(event)" ondragover="allowDrop8(event)">
+                <img
+                  src="assets/semicolon.png"
+                  draggable="true"
+                  ondragstart="drag8(event)"
+                  id="drag8"
+                  width="88"
+                  height="31"
+                />
+              </div>
+    
+            
+        </div>
+        
+        </main>
+        
+        <main class="grid2">
+            
+
+            <div
+              id="div8"
+              ondrop="drop4(event)"
+              ondragover="allowDrop4(event)"
+            ></div>
+
+            <div
+              id="div10"
+              ondrop="drop5(event)"
+              ondragover="allowDrop5(event)"
+            ></div>
+
+            <div
+              id="div12"
+              ondrop="drop6(event)"
+              ondragover="allowDrop6(event)"
+            ></div>
+
+            <div
+              id="div14"
+              ondrop="drop7(event)"
+              ondragover="allowDrop7(event)"
+            ></div>
+
+            <div
+              id="div16"
+              ondrop="drop8(event)"
+              ondragover="allowDrop8(event)"
+            ></div>
+
+
+        </main>
+
+        <main class="grid3">
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            <div
+              id="div6"
+              ondrop="drop3(event)"
+              ondragover="allowDrop3(event)"
+            ></div>
+
+        </main>
+        
+        
+        
+
+      <div class="box">
+        <h1 class="uninteresting">
+          <span class="uninteresting-punctuation"
+            >Uninteresting Punctuation</span>
+        </h1>
+        <h1 class="vs">vs</h1>
+        <h1 class="interesting">
+          <span class="interesting-punctuation">Interesting Punctuation</span>
+        </h1>
+      </div>
+    </div>
+  </body>
 </html>

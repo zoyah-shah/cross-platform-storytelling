@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&display=swap");
 
 body {
-  /* margin: 0; */
+  margin: 0;
   background: #8c8177;
 }
 
@@ -23,21 +23,44 @@ li {
   font-family: "Maitree", serif;
   font-size: 40px;
   border-bottom: 1px solid #d7d7d1;
-  /* border-left: 1px solid #e0e8ef; */
-  /* border-right: 1px solid #e0e8ef; */
 }
 
 li a {
   display: block;
   color: #d7d7d1;
   text-align: center;
-  /* padding: 14px 16px; */
   padding: 1rem 2rem;
   text-decoration: none;
 }
 
-li a:hover {
-  background-color: #8c8177;
+.question:hover,
+.exclamation:hover,
+.semicolon:hover,
+.colon:hover,
+.period:hover,
+.comma:hover,
+.quotation:hover,
+.apostrophe:hover,
+.punctuation:hover{
+    color: #3f302a;
+}
+
+/* .question:active,
+.exclamation:active,
+.semicolon:active,
+.colon:active,
+.period:active,
+.comma:active,
+.quotation:active,
+.apostrophe:active,
+.punctuation:active{
+    color: #3f302a;
+} */
+
+
+
+li:active{
+    color: #3f302a;
 }
 
 .punctuation {
@@ -48,18 +71,14 @@ li a:hover {
   border-left: 1px solid #e0e8ef;
 }
 .colon{
-    /* font-size: 18px; */
     padding-right: 2rem;
     padding-left: 0rem;
     border-right: 1px solid #e0e8ef;
-    /* border-left: 1px solid #e0e8ef; */
   }
   .semicolon{
-    /* font-size: 18px; */
     padding-right: 2rem;
     padding-left: 0rem;
     border-right: 1px solid #e0e8ef;
-    /* border-left: 1px solid #e0e8ef; */
   }
 .quotation {
   padding-right: 2rem;
@@ -90,7 +109,6 @@ li a:hover {
   padding-right: 0rem;
   padding-top: 0rem;
   padding-bottom: 0rem;
-  /* border-right: 1px solid #e0e8ef; */
 }
 
 .period {
@@ -109,68 +127,7 @@ li a:hover {
   border-right: 1px solid #e0e8ef;
 }
 
-/* #div1,
-#div2,
-#div3,
-#div4,
-#div5,
-#div6,
-#div7,
-#div8,
-#div9,
-#div10,
-#div11,
-#div12,
-#div13,
-#div14,
-#div15,
-#div16 {
-  float: left;
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #e0e8ef;
-} */
 
-/* #div2 {
-  position: absolute;
-  top: 20rem;
-}
-#div4 {
-    position: absolute;
-    top: 34vh;
-    right: 5.5vw;
-  }
-
-  #div6{
-    position: absolute;
-    top: 34vh;
-    left: 8vw;
-  } */
-
-/* .drag {
-  position: relative;
-  left: 21vw;
-  font-family: "Maitree", serif;
-  font-weight: 300;
-  font-size: 30px;
-  color: #d7d7d1;
-} */
-
-/* img {
-  position: relative;
-  left: -0.3rem;
-  height: 100%;
-  width: auto;
-}
-
-.box {
-  position: relative;
-  top: 20rem;
-  left: 30rem;
-  /* display: inline-block; */
-} */
 
 .uninteresting {
   position: relative;
@@ -189,24 +146,7 @@ li a:hover {
   top: -4rem;
 }
 
-/* .interesting {
-  position: relative;
-  left: 25rem;
-  top: -15rem;
-  font-family: "Maitree", serif;
-  font-weight: 500;
-  font-size: 30px;
-  color: #d7d7d1;
-  width: 15rem;
-  height: 5rem;
-  padding: 2rem;
-  border: 1px solid #d7d7d1;
-  text-align: center;
-}
-.interesting-punctuation {
-  position: relative;
-  top: -0.5rem;
-} */
+
 
 .vs {
   position: relative;
@@ -219,39 +159,6 @@ li a:hover {
   top: -7rem;
 }
 
-/* .grid{
-    position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-gap: 1rem;
-    left: 22vw;
-    top: 12vh;
-  } */
-
-  /* .grid-box {
-    border: 1px solid black;
-    background: white;
-    height: 10rem;
-    padding: 2rem;
-    transition: all .25s;
-  } */
-
-  /* .grid2{
-      position: relative;
-      top: 28vh;
-      left: 50vw;
-  }
-
-  .grid3{
-    position: relative;
-    top: 28vh;
-}
-
-.drag{
-    position: relative;
-    top: 15vh;
-} */
 
 
 
@@ -259,11 +166,7 @@ li a:hover {
 
 
 
-
-
-
-
-
+/* DRAG AND DROP */
 .instructions{
     position: relative;
     top: 20vh;
@@ -279,7 +182,6 @@ li a:hover {
 	height: 300px;
 	padding: 10px;
 	margin-right: 3px;
-	/* background: pink; */
     text-align: center;
     display: inline;
     font-family: "Maitree", serif;
@@ -304,6 +206,11 @@ li a:hover {
     color: #d7d7d1;
     /* top: 0vw; */
 }
+
+.block:hover{
+    background: #3f302a;
+}
+
 
 #interesting.correct,
 #boring.correct{

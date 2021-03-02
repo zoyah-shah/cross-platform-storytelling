@@ -87,10 +87,10 @@ body {
   
   .comma {
     padding-left: 0rem;
-    padding-right: 0rem;
+    padding-right: 2rem;
     padding-top: 0rem;
     padding-bottom: 0rem;
-    /* border-right: 1px solid #e0e8ef; */
+    border-right: 1px solid #e0e8ef;
   }
   
   .period {
@@ -101,12 +101,19 @@ body {
     border-right: 1px solid #e0e8ef;
   }
   
-  .apostrophe {
+  /* .apostrophe {
     padding-left: 0rem;
     padding-right: 2rem;
     padding-top: 0rem;
     padding-bottom: 0rem;
     border-right: 1px solid #e0e8ef;
+  } */
+  .apostrophe {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    /* border-right: 1px solid #e0e8ef; */
   }
 
 .box{
@@ -179,6 +186,76 @@ body {
     color:#3f312a;
   }
 
+  .apostrophes{
+    color: #3f312a;
+  }
+  
+  .apostrophes:hover{
+    font-size: 0;
+  }
+  
+  .apostrophes:hover:after{
+    content: attr(data-hover);
+    font-size: 1.5rem;
+    color:#3f312a;
+  }
+
+  .period-punct{
+    color: #3f312a;
+  }
+  
+  .period-punct:hover{
+    font-size: 0;
+  }
+  
+  .period-punct:hover:after{
+    content: attr(data-hover);
+    font-size: 1.5rem;
+    color:#3f312a;
+  }
+
+  .comma-punct{
+    color: #3f312a;
+  }
+  
+  .comma-punct:hover{
+    font-size: 0;
+  }
+  
+  .comma-punct:hover:after{
+    content: attr(data-hover);
+    font-size: 1.5rem;
+    color:#3f312a;
+  }
+
+  .colon-punct{
+    color: #3f312a;
+  }
+  
+  .colon-punct:hover{
+    font-size: 0;
+  }
+  
+  .colon-punct:hover:after{
+    content: attr(data-hover);
+    font-size: 1.5rem;
+    color:#3f312a;
+  }
+
+  .semicolon-punct{
+    color: #3f312a;
+  }
+  
+  .semicolon-punct:hover{
+    font-size: 0;
+  }
+  
+  .semicolon-punct:hover:after{
+    content: attr(data-hover);
+    font-size: 1.5rem;
+    color:#3f312a;
+  }
+
   .next{
       position: absolute;
       left: 92vw;
@@ -200,3 +277,169 @@ body {
     width: 6%;
     height: auto;
 }
+
+.punct{
+  position: relative;
+  border: 1px solid #d7d7d1;
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  left: 50vw;
+  top: 20vh;
+  text-align: center;
+  padding: 1rem;
+  font-family: "Maitree", serif;
+  font-size: 1.2rem;
+  color: #d7d7d1;
+}
+
+.text{
+  position: absolute;
+  top: -20px;
+  text-align: center;
+  left: 25px;
+}
+
+a{
+  text-decoration: none;
+  color: #d7d7d1;
+}
+a:hover{
+  color:  #3f302a;
+}
+
+
+
+@media only screen and (max-width: 768px){
+  ul{
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    font-size: 1rem;
+    float: left;
+    left: -0vw;
+    top: -1vh;
+    background: #3f302a;
+}
+
+
+.punctuation {
+    float: left;
+    text-align: left;
+    font-size: 16px;
+    line-break: -10px;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    border-right: none;
+    border-left: none;
+    /* left: -5vw; */
+    /* width: 00px; */
+  }
+  .colon{
+      padding-right: 0rem;
+      padding-left: 0rem;
+      border-right: none;
+    }
+    .semicolon{
+      padding-right: 0rem;
+      padding-left: 0rem;
+      border-right: none;
+    }
+  .quotation {
+    padding-right: 0rem;
+    padding-left: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    border-right: none;
+  }
+  
+  .question {
+    padding: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    border-right: none;
+    border-left: none;
+  }
+  
+  .exclamation {
+    padding-right: 0rem;
+    padding-left: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    border-right: none;
+  }
+  
+  .comma {
+      padding-left: 0rem;
+      padding-right: 0rem;
+      padding-top: 0rem;
+      padding-bottom: 0rem;
+      border-right: none;
+    }
+  
+  .period {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    border-right: none;
+  }
+  
+  .apostrophe {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    /* border-right: 1px solid #e0e8ef; */
+  }
+
+
+    .box{
+      top: 8vh;
+      left: 30vw;
+    }
+    .body-text{
+      width: 300px;
+      left: 30vw;
+      top: 23vh;
+    }
+
+
+
+    .next{
+      left: 70vw;
+      top: 1vh;
+  }
+  .next-arrow{
+      width: 50%;
+      height: auto;
+  }
+
+  .back{
+    left: 40vw;
+    top: 1vh;
+}
+.back-arrow{
+    width: 20%;
+    height: auto;
+}
+
+.grid{
+  position: relative;
+  top: 20vh;
+  left: 1vw;
+  /* padding: 0; */
+}
+.punct{
+
+  width: 1rem;
+  height: 2rem;
+  display: inline-block;
+  left: 30vw;
+  top: 20vh;
+  padding: 1rem;
+  font-size: 1rem;
+  
+}
+
+  }

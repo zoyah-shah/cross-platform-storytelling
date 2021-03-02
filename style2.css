@@ -45,17 +45,19 @@ li a {
     color: #3f302a;
 }
 
-/* .question:active,
-.exclamation:active,
-.semicolon:active,
-.colon:active,
-.period:active,
-.comma:active,
-.quotation:active,
-.apostrophe:active,
-.punctuation:active{
-    color: #3f302a;
-} */
+#question:hover,
+#exclamation:hover,
+#semicolon:hover,
+#colon:hover,
+#period:hover,
+#comma:hover,
+#quotation:hover,
+#apostrophe:hover,
+#punctuation:hover{
+    color: #d7d7d1;
+}
+
+
 
 
 
@@ -105,11 +107,12 @@ li:active{
 }
 
 .comma {
-  padding-left: 0rem;
-  padding-right: 0rem;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-}
+    padding-left: 0rem;
+    padding-right: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    border-right: 1px solid #e0e8ef;
+  }
 
 .period {
   padding-left: 0rem;
@@ -121,10 +124,10 @@ li:active{
 
 .apostrophe {
   padding-left: 0rem;
-  padding-right: 2rem;
+  padding-right: 0rem;
   padding-top: 0rem;
   padding-bottom: 0rem;
-  border-right: 1px solid #e0e8ef;
+  /* border-right: 1px solid #e0e8ef; */
 }
 
 
@@ -240,4 +243,145 @@ li:active{
     font-size: 1.5rem;
     /* color: #8c8177; */
 
+}
+
+a{
+    text-decoration: none;
+    color: #d7d7d1;
+}
+a:hover{
+    color:  #3f302a;
+}
+
+
+
+
+
+
+
+/* mobile size */
+@media only screen and (max-width: 768px){
+    ul{
+        height: 100%;
+        width: 25%;
+        position: fixed;
+        font-size: 1rem;
+        float: left;
+        left: -0vw;
+        top: -1vh;
+        background: #3f302a;
+    }
+    a:hover{
+        color:  #3f302a;
+        background: #8c8177;
+    }
+
+  
+    .punctuation {
+        float: left;
+        text-align: left;
+        font-size: 16px;
+        line-break: -10px;
+        padding-right: 0rem;
+        padding-left: 0rem;
+        border-right: none;
+        border-left: none;
+        /* left: -5vw; */
+        /* width: 00px; */
+      }
+      .colon{
+          padding-right: 0rem;
+          padding-left: 0rem;
+          border-right: none;
+        }
+        .semicolon{
+          padding-right: 0rem;
+          padding-left: 0rem;
+          border-right: none;
+        }
+      .quotation {
+        padding-right: 0rem;
+        padding-left: 0rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        border-right: none;
+      }
+      
+      .question {
+        padding: 0rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        border-right: none;
+        border-left: none;
+      }
+      
+      .exclamation {
+        padding-right: 0rem;
+        padding-left: 0rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        border-right: none;
+      }
+      
+      .comma {
+          padding-left: 0rem;
+          padding-right: 0rem;
+          padding-top: 0rem;
+          padding-bottom: 0rem;
+          border-right: none;
+        }
+      
+      .period {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        border-right: none;
+      }
+      
+      .apostrophe {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        /* border-right: 1px solid #e0e8ef; */
+      }
+
+
+      .instructions{
+        position: relative;
+        top: 10vh;
+        left: 40vw;
+        font-family: "Maitree", serif;
+        font-size: 1rem;
+        width: 300px;
+        color: #d7d7d1;
+    }
+    #interesting{
+        
+        top: 40vh;
+        left: -4vw;
+        
+    }
+    
+    #boring{
+        
+        top: 50vh;
+        left: 40vw;
+        
+    
+    }
+    .block {
+        display: inline;
+        padding: .5rem;
+        top: 10vh;
+        left: -30vw;
+    }
+    #unassigned{
+        top: 18vh;
+        left: 68vw;
+        /* padding: 0; */
+        font-size: 0px;
+    }
+    
 }
